@@ -22,7 +22,7 @@
 
     <!-- second navbar -->
 
-    <div class="px-20 bg-white flex text-center justify-between shadow-md">
+    <div class="px-20 bg-white sticky top-0 flex text-center justify-between shadow-md">
         <div class="p-3"><img height="50px" width="150px" src="./items/R.png" alt=""></div>
 
         <div class="p-3">
@@ -40,33 +40,68 @@
     <!-- ends -->
 
     <!-- panda with food -->
-
-    <div class="grid grid-rows-3 grid-flow-col gap-4">
-        <div class="row-span-2 col-span-2">
-            <p class="text-3xl py-7 text-gray-600">It's the food and groceries you love, delivered</p>
+    <div class="flex items-center h-[45vh] ml-10">
+        <div class="w-[100%]">
+          <p class="text-4xl pb-5 max-w-[60%]">
+            It's the food and groceries you love, delivered
+          </p>
+          <div
+            class="input flex border py-4 px-2 max-w-[80%] justify-between bg-white shadow-2xl rounded-xl"
+           >
+            <div class="ad flex w-[83%] justify-between border-2 rounded-lg p-2">
+              <input
+                class="w-[60%] focus:outline-none"
+                type="text"
+                placeholder="your street and street number"
+              />
+              <button class="text-pink-600">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-location-crosshairs pr-2"></i>
+                  <p>Locate me</p>
+                </div>
+              </button>
+            </div>
+  
+            <button
+              class="bg-pink-600 rounded-lg text-white p-3 hover:bg-pink-700 hover:scale-105"
+            >
+              Find Food
+            </button>
+          </div>
         </div>
-
-        <div id="search-bar" class="w-120 bg-white rounded-md shadow-lg">
-            <form class="flex items-center justify-center p-2">
-                <input type="text" placeholder="Your street and street number"
-                    class="w-full rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent">
-                <button type="submit"
-                    class="bg-pink-600 text-white rounded-md px-4 py-1 ml-2 hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
-                    Find food
-                </button>
-            </form>
+        <div class="w-[70%]">
+          <img class="h-fit w-screen" src="./items/bg.png" alt="" />
         </div>
-
-
-        <div class="row-span-3">
-            <img class="h-auto max-w-lg ms-auto" src="./items/refresh-hero-home-bd.png" alt="">
-        </div>
-    </div>
+      </div>
+    
 <!-- ends -->
 
 <!-- prepare food -->
-    <div class="bg-white">
-        <p class="">You prepare the food, we handle the rest</p>
+    <div class="bg-white text-3xl min-h-[80vh]">
+        <p class="my-8 ml-16 pt-10">You prepare the food, we handle the rest</p>
+
+        <div class="relative">
+          <img class="relative" src="./items/home-vendor-bd.jpg" alt="">
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-md max-w-[35vw] border-2 absolute top-[110%] left-24">
+          <p class="pb-4 text-2xl text-gray-600">
+            List your restaurant or shop on foodpanda
+          </p>
+          <p class="text-base pb-4">Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+          <p class="text-base pb-4">It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas - in a heartbeat!</p>
+          <p class="text-base pb-4">Interested? Let's start our partnership today!</p>
+
+          <button
+            class="bg-pink-600 text-[15px] rounded-lg text-white p-2 hover:bg-pink-700 hover:scale-105"
+          >
+            Get Started
+          </button>
+        </div>
+    </div>
+
+    <div>
+      
     </div>
 </body>
 </html>
